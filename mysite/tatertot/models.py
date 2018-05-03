@@ -11,6 +11,7 @@ class Tot(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+    category = models.TextField
 
 
     def publish(self):
