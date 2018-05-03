@@ -12,6 +12,7 @@ class Tot(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
     category = models.TextField
+    Votes= models.IntegerField()
 
 
     def publish(self):
